@@ -12,6 +12,7 @@ export default function App() {
 
   return (
     <div className="container">
+      <div className="header"></div>
       <div className="card">
         <h1>Database Connection Status</h1>
         <p className="message">{message}</p>
