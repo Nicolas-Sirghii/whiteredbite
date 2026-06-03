@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import "./App.css";
+import { Header } from "./elements/header";
 
 export default function App() {
   const [message, setMessage] = useState("Loading...");
@@ -12,7 +14,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <div className="header"></div>
+      <Header />
       <div className="card">
         <h1>Database Connection Status</h1>
         <p className="message">{message}</p>
