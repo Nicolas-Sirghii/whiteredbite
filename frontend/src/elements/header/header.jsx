@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { HeaderOptions } from "./header_options/header_options";
+import {UserAvatar} from "./user_avatar";
+import "./header.css";
 
 export function Header() {
     const [eye, setEye] = useState(true);
   return (
-    <header className="header1">
+    <header className="header">
         <div className="logo-wrapper">
             <img
             style={{ left: eye ? "68.4%" : "79.5%" }}
@@ -15,6 +18,9 @@ export function Header() {
           onClick={() => setEye(!eye)}
            src="/header_logo_small.png" alt="Header Logo" className="logo" />
         </div>
+        <HeaderOptions />
+
+        <UserAvatar />
         
     </header>
   );
