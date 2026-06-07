@@ -16,7 +16,7 @@ export function Header() {
              src="/right-eye.png" className="right-eye" alt="Right Eye" />  
           <img
           onClick={() => setEye(!eye)}
-           src="/header_logo_small.png" alt="Header Logo" className="logo" />
+           src="/header_logo_clean.png" alt="Header Logo" className="logo" />
         </div>
         <HeaderOptions />
 
